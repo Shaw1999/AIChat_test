@@ -13,6 +13,7 @@ const cn = {
   Auth: {
     Title: "需要密码",
     Tips: "管理员开启了密码验证，请在下方填入访问码",
+    // SubTips: "或者输入你的 OpenAI 或 Google API 密钥",
     Input: "在此处填写访问码",
     Confirm: "确认",
     Later: "稍后再说",
@@ -282,6 +283,18 @@ const cn = {
         Title: "模型服务商",
         SubTitle: "切换不同的服务商",
       },
+      OpenAI: {
+        ApiKey: {
+          Title: "API Key",
+          SubTitle: "使用自定义 OpenAI Key 绕过密码访问限制",
+          Placeholder: "OpenAI API Key",
+        },
+
+        Endpoint: {
+          Title: "接口地址",
+          SubTitle: "除默认地址外，必须包含 http(s)://",
+        },
+      },
       Azure: {
         ApiKey: {
           Title: "接口密钥",
@@ -299,7 +312,23 @@ const cn = {
           SubTitle: "选择指定的部分版本",
         },
       },
+      Google: {
+        ApiKey: {
+          Title: "接口密钥",
+          SubTitle: "使用自定义 Google AI Studio API Key 绕过密码访问限制",
+          Placeholder: "Google AI Studio API Key",
+        },
 
+        Endpoint: {
+          Title: "接口地址",
+          SubTitle: "不包含请求路径，样例：",
+        },
+
+        ApiVerion: {
+          Title: "接口版本 (gemini-pro api version)",
+          SubTitle: "选择指定的部分版本",
+        },
+      },
       CustomModel: {
         Title: "自定义模型名",
         SubTitle: "增加自定义模型可选项，使用英文逗号隔开",
